@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Dr SAIhib - Sovereign AI Health Guidance</title>
+    <meta name="description" content="Your AI doctor, right in your village. A sovereign, offline-first health guidance agent for rural India with triage, early-warning checks, and local language support." />
+    <meta property="og:title" content="Dr SAIhib - Sovereign AI Health Guidance" />
+    <meta property="og:description" content="Your AI doctor, right in your village. A sovereign, offline-first health guidance agent for rural India with triage, early-warning checks, and local language support." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#00B8A9" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Dr SAIhib" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;900&family=Noto+Sans+Devanagari:wght@400;600;700;900&family=Noto+Sans+Kannada:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Kannada', system-ui, -apple-system, sans-serif;
+      }
+      @media print {
+        header, footer, button, .print\:hidden {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register service worker for offline-first operation
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(reg) {
+              console.log('Dr SAIhib Service Worker registered:', reg.scope);
+            })
+            .catch(function(err) {
+              console.warn('Service Worker registration skipped:', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
+

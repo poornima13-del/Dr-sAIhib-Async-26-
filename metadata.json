@@ -1,0 +1,11 @@
+{
+  "name": "Dr SAIhib - Sovereign AI Health Guidance",
+  "description": "Your AI doctor, right in your village. A sovereign, offline-first health guidance agent for rural India with triage, early-warning checks, and local language support.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
