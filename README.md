@@ -45,7 +45,7 @@ Early detection of Cancer ![ Cancer](image-21.png) ![ Cancer](image-22.png) ![ C
  Man Ki Baat ![ Man Ki Baat](image-24.png) ,
  result screen ![result](image-12.png) ![result](image-13.png) ![result](image-14.png) ![result](image-15.png) ![result](image-16.png), ASHA portal ![ASHA portal](image-17.png) ![ASHA portal](image-18.png))*
  
-- Demo video: *[add link here]*
+- Demo video: *[https://youtu.be/UYDOm1WEPjA?si=g4u3zgLN0ssgXXPo]*
 - Live/offline demo: open `index.html` directly, or scan the QR code in `/docs/demo-qr.png`
 
 ---
